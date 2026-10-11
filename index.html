@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kapit Tayo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">Kapit Tayo<span>Harassment awareness</span></div>
+    <nav class="nav" id="nav" aria-label="Modules"></nav>
+    <div class="prog"><span id="prog-t">0 of 6 modules opened</span><div class="bar"><i id="prog-b"></i></div></div>
+  </aside>
+
+  <main class="main">
+
+    <!-- START -->
+    <section class="mod" id="m-start">
+      <div class="hero">
+        <span class="eyebrow">Gender-based harassment in the Philippines</span>
+        <h1>Harassment is never okay.</h1>
+        <p>Catcalling, groping and nasty messages are harassment. They are also against the law. Learn the facts in six short modules.</p>
+        <button class="btn" type="button" data-go="places">Start learning</button>
+      </div>
+      <div class="grid3">
+        <div class="card big-card"><span class="big">88%</span><p>of young women (ages 18 to 24) in a Quezon City survey were harassed at least once.<sup><a href="#r6">6</a><a href="#r7">7</a></sup></p></div>
+        <div class="card big-card"><span class="big">3 in 5</span><p>women in the same survey were harassed at least once in their lives.<sup><a href="#r6">6</a><a href="#r7">7</a></sup></p></div>
+        <div class="card big-card"><span class="big">1 in 2</span><p>harassed women did nothing about it.<sup><a href="#r6">6</a><a href="#r7">7</a></sup></p></div>
+      </div>
+      <p class="note">The survey was done in Quezon City in 2016. It does not cover the whole country.</p>
+      <div class="todo" id="todo"></div>
+    </section>
+
+    <!-- PLACES -->
+    <section class="mod" id="m-places" hidden>
+      <div class="mod-head"><span class="eyebrow">Module 1</span><h2>Where it happens</h2><p>One law, the Safe Spaces Act (RA 11313), covers all three places. Open each one.<sup><a href="#r1">1</a><a href="#r4">4</a></sup></p></div>
+      <details class="acc" open>
+        <summary>On the street and in public</summary>
+        <div class="acc-body">
+          <div><h3>What it looks like</h3><ul><li>Catcalling and whistling</li><li>Unwanted invitations</li><li>Sexist or hateful insults</li><li>Touching or groping</li><li>Flashing</li></ul><p class="note" style="margin-top:8px">All are listed in the Act.<sup><a href="#r3">3</a></sup></p></div>
+          <div><h3>What the law says</h3><p>It is a crime in streets, jeepneys, malls and other public places.<sup><a href="#r14">14</a></sup></p><p>A first offense can mean a fine starting at PHP 1,000 plus community service. Serious acts can mean jail or a PHP 30,000 fine.<sup><a href="#r1">1</a></sup></p></div>
+          <div><h3>What to do</h3><p>Tell the staff of the place, the police or your local hotline. They must call the police and share CCTV footage when a court asks.<sup><a href="#r2">2</a></sup></p></div>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>Online</summary>
+        <div class="acc-body">
+          <div><h3>What it looks like</h3><ul><li>Online stalking</li><li>Nonstop unwanted messages</li><li>Sexual or sexist threats and insults</li><li>Sharing someone's private photos or videos</li></ul><p class="note" style="margin-top:8px">Listed in the Act.<sup><a href="#r1">1</a><a href="#r4">4</a></sup></p></div>
+          <div><h3>What the law says</h3><p>The penalty is a fine of PHP 100,000 to PHP 500,000, jail time, or both.<sup><a href="#r5">5</a></sup></p><p>Private messages count too.<sup><a href="#r1">1</a></sup></p></div>
+          <div><h3>What to do</h3><p>Take screenshots first. Then report to the PNP Anti-Cybercrime Group.<sup><a href="#r5">5</a></sup> Its AlengPulis helpline is for women and children.<sup><a href="#r13">13</a></sup></p></div>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>At school and at work</summary>
+        <div class="acc-body">
+          <div><h3>What it looks like</h3><ul><li>Unwanted sexual comments or touching</li><li>Asking for sexual favors</li><li>Behavior that hurts a person's dignity</li></ul><p class="note" style="margin-top:8px">Covered by the Act.<sup><a href="#r1">1</a><a href="#r15">15</a></sup></p></div>
+          <div><h3>What the law says</h3><p>The 2019 law widened the old 1995 law.<sup><a href="#r15">15</a></sup></p><p>Bosses and school heads can be punished if they ignore a report.<sup><a href="#r4">4</a></sup></p></div>
+          <div><h3>What to do</h3><p>Tell HR or the school committee (CODI). Employers and schools must act on your report.<sup><a href="#r5">5</a></sup></p></div>
+        </div>
+      </details>
+      <button class="btn" type="button" data-go="numbers">Next: The numbers</button>
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="mod" id="m-numbers" hidden>
+      <div class="mod-head"><span class="eyebrow">Module 2</span><h2>The numbers</h2><p>Data from a 2016 survey of women in Quezon City, and from police records on online abuse.</p></div>
+      <div class="card">
+        <h3 style="margin-bottom:16px">Street harassment survey</h3>
+        <div class="rows" id="rows-street"></div>
+        <p class="note" style="margin-top:16px">Source: Social Weather Stations for UN Women and Quezon City.<sup><a href="#r6">6</a><a href="#r8">8</a></sup> It shows a pattern, not a count for the whole country.</p>
+      </div>
+      <div class="grid2">
+        <div class="card"><span class="eyebrow">Sextortion cases</span><div class="compare" style="margin-top:8px"><span>110</span><em>&rarr;</em><span>121</span></div><p class="note" style="margin-top:6px"><span class="tag-up">Up 10%</span> from 2022 to 2023.<sup><a href="#r11">11</a></sup> Sextortion means threatening to share private photos to force someone.</p></div>
+        <div class="card"><span class="eyebrow">Voyeurism cases</span><div class="compare" style="margin-top:8px"><span>294</span><em>&rarr;</em><span>347</span></div><p class="note" style="margin-top:6px"><span class="tag-up">Up 18%</span> from 2023 to 2024.<sup><a href="#r11">11</a></sup> Voyeurism means secretly recording or spying on someone.</p></div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:6px">Most common online complaints</h3>
+        <p class="note" style="margin-bottom:16px">Share of complaints from women and children to the PNP helpline.<sup><a href="#r10">10</a></sup></p>
+        <div class="rows" id="rows-online"></div>
+        <p class="note" style="margin-top:16px">Many cases are never reported, so the real numbers are higher. Worldwide, nearly 60% of women have faced online violence, says the UN Population Fund.<sup><a href="#r12">12</a></sup> Percent changes are calculated from the source figures.</p>
+      </div>
+      <button class="btn" type="button" data-go="law">Next: The law</button>
+    </section>
+
+    <!-- LAW -->
+    <section class="mod" id="m-law" hidden>
+      <div class="mod-head"><span class="eyebrow">Module 3</span><h2>The law, simply</h2><p>The Safe Spaces Act was signed in April 2019.<sup><a href="#r1">1</a></sup> Motive does not matter. Saying "it was just a joke" is not an excuse.<sup><a href="#r2">2</a></sup></p></div>
+      <div class="ladder">
+        <div><span class="eyebrow">Public spaces</span><span class="big">PHP 1,000<small>to PHP 30,000 or 11 to 30 days in jail</small></span><p>For a first offense, depending on the act.<sup><a href="#r1">1</a></sup></p></div>
+        <div><span class="eyebrow">Online</span><span class="big">PHP 100,000<small>to PHP 500,000, jail, or both</small></span><p>Set by the court.<sup><a href="#r5">5</a></sup></p></div>
+        <div><span class="eyebrow">Whole Act</span><span class="big">6 days<small>to 6 months in prison</small></span><p>Fines run from PHP 1,000 to PHP 500,000.<sup><a href="#r2">2</a></sup></p></div>
+      </div>
+      <div class="card who">
+        <h3>Who has to act</h3>
+        <div><b>Bars, malls, cinemas</b><span>Put up warning signs with a hotline number and help victims report.<sup><a href="#r2">2</a><a href="#r14">14</a></sup></span></div>
+        <div><b>Local government</b><span>Make local rules and run a hotline.<sup><a href="#r3">3</a></sup></span></div>
+        <div><b>Bosses and school heads</b><span>Act on reports, or be held responsible.<sup><a href="#r4">4</a></sup></span></div>
+        <div><b>Police online unit</b><span>Takes complaints about online harassment.<sup><a href="#r5">5</a></sup></span></div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:12px">Related laws</h3>
+        <div class="chips">
+          <div class="chip"><b>RA 11313</b>Safe Spaces Act<sup><a href="#r1">1</a></sup></div>
+          <div class="chip"><b>RA 7877</b>Anti-Sexual Harassment Act of 1995<sup><a href="#r15">15</a></sup></div>
+          <div class="chip"><b>RA 9710</b>Magna Carta of Women<sup><a href="#r9">9</a></sup></div>
+          <div class="chip"><b>RA 9262</b>Law on violence against women and children<sup><a href="#r16">16</a></sup></div>
+        </div>
+      </div>
+      <button class="btn" type="button" data-go="help">Next: What to do</button>
+    </section>
+
+    <!-- HELP -->
+    <section class="mod" id="m-help" hidden>
+      <div class="mod-head"><span class="eyebrow">Module 4</span><h2>What to do</h2><p>Half of the women who were harassed did nothing, and some were too afraid.<sup><a href="#r6">6</a></sup> Go through three steps.</p></div>
+      <div class="card stepper" id="stepper" aria-live="polite"></div>
+      <button class="btn" type="button" data-go="quiz">Next: Quiz</button>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="mod" id="m-quiz" hidden>
+      <div class="mod-head"><span class="eyebrow">Module 5</span><h2>Check what you learned</h2><p>Five questions. Pick one answer each.</p></div>
+      <div class="card q" id="quiz" aria-live="polite"></div>
+      <div class="card">
+        <h3 style="margin-bottom:12px">Talk about it</h3>
+        <div class="grid3">
+          <p>Have you seen this happen? What did people do?</p>
+          <p>Why do some people stay silent?</p>
+          <p>How can our school or barangay make reporting easier?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="mod" id="m-sources" hidden>
+      <div class="mod-head"><span class="eyebrow">References</span><h2>Sources</h2></div>
+      <div class="card">
+        <ol class="refs">
+          <li id="r1">Rappler. <em>Duterte signs Safe Spaces Act (RA 11313)</em>, April 2019. <a href="https://www.rappler.com/?p=235481" target="_blank" rel="noopener">rappler.com</a></li>
+          <li id="r2">PTV News. <em>PRRD signs law imposing heftier fines for sexual harassment</em>. <a href="https://ptvnews.ph/?p=125613" target="_blank" rel="noopener">ptvnews.ph</a></li>
+          <li id="r3">Senate of the Philippines. <em>Legislative bulletin: RA 11313, Safe Spaces Act</em>, September 2020. <a href="https://legacy.senate.gov.ph/publications/ELLS/IB%20RA%2011313%20PCW.pdf" target="_blank" rel="noopener">legacy.senate.gov.ph</a></li>
+          <li id="r4">Asian Development Bank, Law and Policy Reform. <em>Safe Spaces Act, Republic Act No. 11313</em>. <a href="https://lpr.adb.org/resource/safe-spaces-act-republic-act-no-11313-philippines" target="_blank" rel="noopener">lpr.adb.org</a></li>
+          <li id="r5">Jur.ph. <em>Safe Spaces Act: definitions, penalties and mandates</em>. <a href="https://jur.ph/law/facts/safe-spaces-act" target="_blank" rel="noopener">jur.ph</a></li>
+          <li id="r6">UN Women Asia-Pacific. <em>QC's pioneering law to stop street harassment</em>, March 2016. <a href="https://asiapacific.unwomen.org/en/news-and-events/stories/2016/03/qcs-pioneering-law-to-stop-street-harassment" target="_blank" rel="noopener">asiapacific.unwomen.org</a></li>
+          <li id="r7">Rappler. <em>How safe are Philippine streets for women?</em> (SWS Safe Cities Quezon City survey), March 2016. <a href="https://www.rappler.com/?p=124993" target="_blank" rel="noopener">rappler.com</a></li>
+          <li id="r8">Stop Street Harassment. <em>New street harassment studies in the Philippines</em>, summarizing the SWS February 2016 survey. <a href="https://stopstreetharassment.org/?p=20716" target="_blank" rel="noopener">stopstreetharassment.org</a></li>
+          <li id="r9">BusinessWorld. <em>SWS baseline study on street harassment</em>, by Nickky Faustine P. de Guzman. <a href="https://www.bworldonline.com/?p=11534" target="_blank" rel="noopener">bworldonline.com</a></li>
+          <li id="r10">Manila Bulletin. <em>What are the 5 common online crimes vs women and children? PNP-ACG reveals</em>, March 6, 2024. <a href="https://mb.com.ph/2024/3/6/what-are-the-5-common-online-crime-vs-women-and-children-pnp-acg-reveals" target="_blank" rel="noopener">mb.com.ph</a></li>
+          <li id="r11">Foundation for Media Alternatives. <em>Online Gender-Based Violence in the Philippines: 2025 Mid-year Report</em> (citing PNP-ACG figures). <a href="https://fma.ph/?p=13188" target="_blank" rel="noopener">fma.ph</a></li>
+          <li id="r12">Foundation for Media Alternatives. <em>2024 Online Gender-Based Violence Report</em> (citing UNFPA and the Economist Intelligence Unit). <a href="https://fma.ph/2024-online-gender-based-violence-report/" target="_blank" rel="noopener">fma.ph</a></li>
+          <li id="r13">Commission on Human Rights. <em>Statement commending the activation of the PNP virtual helpline for women and children</em>. <a href="https://chr.gov.ph/tl/2024/statements/press-statement/statement-of-the-commission-on-human-rights-commending-the-activation-of-the-pnp-virtual-helpline-for-women-and-children" target="_blank" rel="noopener">chr.gov.ph</a></li>
+          <li id="r14">Batas Natin. <em>RA No. 11313, Safe Spaces Act</em> (full text). <a href="https://batasnatin.com/laws/ra-11313" target="_blank" rel="noopener">batasnatin.com</a></li>
+          <li id="r15">Interaksyon. <em>Philippines' streets should be safer for women with new law signed</em>, May 29, 2019. <a href="https://interaksyon.philstar.com/trends-spotlights/2019/05/29/149719/safe-streets-public-spaces-act/amp/" target="_blank" rel="noopener">interaksyon.philstar.com</a></li>
+          <li id="r16">Foundation for Media Alternatives. <em>Mapping online gender-based violence in the Philippines</em>, 2018 (names RA 9262 among laws applied by the PNP-ACG). <a href="https://fma.ph/recognising-and-responding-online-gender-based-violence-in-the-philippines/" target="_blank" rel="noopener">fma.ph</a></li>
+        </ol>
+      </div>
+      <p class="foot">Midterm project: Gender-responsive Digital Platform. Statistics were last checked in October 2026.</p>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
